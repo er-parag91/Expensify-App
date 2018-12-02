@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const EditExpensePage = () => (
-    <div>
-        This is from my EditExpensePage component
+class EditExpensePage extends Component {
+    render() {
+        console.log(this.props)
+
+        return (
+            <div>
+               Editing expense with id of {this.props.match.params.id}
     </div>
-)
+        )
+    }
+}
 
-export default EditExpensePage;
+export default EditExpensePage;  
