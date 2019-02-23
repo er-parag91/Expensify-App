@@ -9,10 +9,10 @@ import { Provider } from 'react-redux';
 import AppRouter from './routers/AppRouter';
 import 'react-dates/lib/css/_datepicker.css';
 import 'react-dates/initialize';
+console.log('hi');
 
 
 const store = configureStore();
-
 
 const jsx = (
     <Provider store={store}>
